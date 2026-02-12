@@ -75,19 +75,34 @@
             line-height: 1.8;
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
         }
 
-        .skill-tag {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            display: inline-block;
+        .skill-category {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category ul {
+            list-style: disc;
+            padding-left: 1.2rem;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .skill-category ul li + li {
+            margin-top: 0.25rem;
         }
 
         .experience-item, .education-item {
@@ -183,15 +198,80 @@
 
             <section class="skills-section">
                 <h2>Skills</h2>
-                <div class="skills">
-                    <span class="skill-tag">Core Expertise: C++ (14+ years) | Multithreaded Apps | Performance | Low-Latency</span>
-                    <span class="skill-tag">Languages: C++ | Python | C# .NET | JavaScript | React | HTML | CSS | XML</span>
-                    <span class="skill-tag">Frameworks: MFC | gRPC | REST API | QuickFix (FIX)</span>
-                    <span class="skill-tag">Performance & Systems: Memory | Caching | Perf | Valgrind | REDIS | KAFKA</span>
-                    <span class="skill-tag">Cloud & Architecture: Microservices | SaaS | Cloud-Native | Docker</span>
-                    <span class="skill-tag">Tools: VS | VS Code | Cursor | PyCharm | Git | ClearCase | SVN | Visio | Bash</span>
-                    <span class="skill-tag">Databases: SQL Server | MongoDB | MySQL | Postgres | DynamoDB</span>
-                    <span class="skill-tag">OS: Windows | Linux</span>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Core Expertise</h3>
+                        <ul>
+                            <li>C++ (14+ years)</li>
+                            <li>Multithreaded application development</li>
+                            <li>Performance optimization</li>
+                            <li>Low-latency systems</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>C# .NET</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>HTML, CSS, XML</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks &amp; Technologies</h3>
+                        <ul>
+                            <li>MFC</li>
+                            <li>gRPC</li>
+                            <li>REST APIs</li>
+                            <li>QuickFix (FIX protocol)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Performance &amp; Systems</h3>
+                        <ul>
+                            <li>Memory management &amp; caching strategies</li>
+                            <li>Post-processing optimization</li>
+                            <li>Perf, Valgrind</li>
+                            <li>REDIS, KAFKA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud &amp; Modern Architecture</h3>
+                        <ul>
+                            <li>Microservices &amp; SaaS</li>
+                            <li>Cloud-native design</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Development Tools</h3>
+                        <ul>
+                            <li>MS Visual Studio, VS Code, Cursor</li>
+                            <li>PyCharm</li>
+                            <li>Git, ClearCase, Tortoise SVN</li>
+                            <li>MS Visio</li>
+                            <li>Bash</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <ul>
+                            <li>MS SQL Server</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Postgres</li>
+                            <li>DynamoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Operating Systems</h3>
+                        <ul>
+                            <li>Windows</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
