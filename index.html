@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinivasan Sundararajan - Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .about {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .experience-item, .education-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item h3, .education-item h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .duration, .education-item .duration {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .company, .education-item .institution {
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .contact a:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Srinivasan Sundararajan</h1>
+            <p class="subtitle">Staff Software Developer & Technology Enthusiast</p>
+        </header>
+
+        <div class="content">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Welcome to my personal portfolio! I'm a Staff Software Engineer with 14+ years designing and implementing high-performance distributed systems and mission-critical applications. Proven expertise in architectural leadership, performance optimization (33% memory reduction), and delivering 99.9%+ reliability. Successfully led technical teams through complex migrations from monolithic to cloud-native microservices architectures serving thousands of global users.
+                </p>
+            </section>
+
+            <section class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </section>
+
+            <section class="experience-section">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Position Title</h3>
+                    <div class="company">Company Name</div>
+                    <div class="duration">Start Date - End Date (or Present)</div>
+                    <p>Description of your role, responsibilities, and key achievements. Highlight major projects, technologies used, and impact.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Position Title</h3>
+                    <div class="company">Company Name</div>
+                    <div class="duration">Start Date - End Date</div>
+                    <p>Description of your role, responsibilities, and key achievements. Highlight major projects, technologies used, and impact.</p>
+                </div>
+            </section>
+
+            <section class="education-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Degree Name</h3>
+                    <div class="institution">University/College Name</div>
+                    <div class="duration">Start Year - End Year</div>
+                    <p>Relevant coursework, honors, or achievements.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Degree Name</h3>
+                    <div class="institution">University/College Name</div>
+                    <div class="duration">Start Year - End Year</div>
+                    <p>Relevant coursework, honors, or achievements.</p>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Contact</h2>
+                <div class="contact">
+                    <a href="https://github.com/SrinivasanSundararajan" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/srinivasansundararajan/" target="_blank">LinkedIn</a>
+                    <a href="mailto:jegansrinivasan@gmail.com">Email</a>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Srinivasan Sundararajan. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
